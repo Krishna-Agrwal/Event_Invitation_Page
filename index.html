@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Invitation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="invitation-container">
+        <h1>You're Invited!</h1>
+        <p class="event-name">Jane & John's Wedding Celebration</p>
+
+        <div class="event-details">
+            <p><strong>Date:</strong> 15th December 2024</p>
+            <p><strong>Time:</strong> 5:00 PM onwards</p>
+            <p><strong>Location:</strong> Sunset Garden Venue, Green Valley, California</p>
+        </div>
+
+        <button class="rsvp-button" onclick="showForm()">RSVP Now</button>
+    </div>
+
+    <!-- RSVP Form -->
+    <div class="rsvp-form-container" id="rsvpForm">
+        <h2>RSVP</h2>
+        <form action="#">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" max="10" required>
+            
+            <button type="submit">Submit</button>
+            <button type="button" onclick="hideForm()">Close</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
